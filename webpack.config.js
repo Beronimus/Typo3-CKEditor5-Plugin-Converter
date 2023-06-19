@@ -7,11 +7,16 @@ module.exports = {
     experiments: {
         outputModule: true,
     },
+    resolve: {
+        alias: {
+            'ckeditor5/src/engine': '/src/cke-translator-engine.js',
+            'ckeditor5/src/core': '/src/cke-translator-core.js',
+            'ckeditor5/src/ui': '/src/cke-translator-ui.js',
+            'ckeditor5/src/utils': '/src/cke-translator-utils.js'
+        }
+    },
     externals: {
-        'ckeditor5/src/core': '@brkh/ckeplugins/cke-translator-core.js',
-        'ckeditor5/src/engine': '@brkh/ckeplugins/cke-translator-engine.js',
-        'ckeditor5/src/ui': '@brkh/ckeplugins/cke-translator-ui.js',
-        'ckeditor5/src/utils': '@brkh/ckeplugins/cke-translator-utils.js'
+        '@typo3/ckeditor5-bundle.js': '@typo3/ckeditor5-bundle.js'
     },
     entry: './node_modules/@ckeditor/ckeditor5-font/src/font.js',
     output: {
