@@ -1,0 +1,23 @@
+{
+  "name": "ckeplugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-utils": "^38.0.1",
+    "@ckeditor/ckeditor5-font": "^38.0.1",
+    "@ckeditor/ckeditor5-theme-lark": "^38.0.1",
+    "css-loader": "^5.2.7",
+    "postcss-loader": "^4.3.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
