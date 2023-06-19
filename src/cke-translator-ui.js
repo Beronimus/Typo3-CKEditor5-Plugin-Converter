@@ -1,6 +1,6 @@
 import { UI } from '@typo3/ckeditor5-bundle.js';
 
-export const icons = { colorPaletteIcon: UI.icons }
+export const icons = UI.icons
 export const Model = UI.Model
 export const createDropdown =  UI.createDropdown
 export const addListToDropdown =  UI.addListToDropdown
