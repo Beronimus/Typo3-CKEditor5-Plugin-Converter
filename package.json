@@ -1,6 +1,6 @@
 {
   "name": "ckeplugins",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "webpack --mode=production"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-utils": "^38.0.1",
     "@ckeditor/ckeditor5-font": "^38.0.1",
