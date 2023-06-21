@@ -3,10 +3,10 @@ TYPO3 V12 uses CKEditor 5 for RTE fields in the backend. This converter bundles 
 
 
 ## Background
-TYPO3 provides a way to [add custom plugin into the backend](https://www.derhansen.de/2023/05/2023-05-05-create-a-custom-ckeditor5-plugin-for-typo3-12.html). However this does not work easly with plugins build with the default ckeitor 5 plugins. 
+TYPO3 provides a way to [add custom plugin into the backend](https://www.derhansen.de/2023/05/2023-05-05-create-a-custom-ckeditor5-plugin-for-typo3-12.html). However this does not work easly with plugins build for ckeditor 5.
 
 This project uses webpack to bundle the existing plugin. By default webpack includes all neede moduls to the bundle, which leads to the [CKEditor Error](https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-ckeditor-duplicated-modules).
- To resolve this error, Webpack needs to be configured to use modules, that are already included in the TYPO3 installation instead of adding them again to the generated bundle.
+ To resolve this error, Webpack needs to be configured to use modules, that are already included in the TYPO3 installation (instead of adding them to the new generated bundle).
 
  ## Usage
 
@@ -24,11 +24,11 @@ Clone the project and run
 
 ### Customize the build for another plugin
 
-If you want to convert another plugin, you have to consider follwing point:
-* Install the plugin you want to convert with npm.
+If you want to convert another plugin, you have to consider follwing points:
+* You may have to install the plugin you want to convert in this project (probably using npm).
 * Change the entry point of the webpack.config.js to ponit to the entry of the plugin.
-* Make sure that the plugin, that you want to convert, is for the CKEditor 5 version used by your TYPO3 installation. You can find the version by searching for the term `const version =` in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js` in your TYPO3 installation.
-* At the moment the translator only contains dependencys needed to convert the font plugin. If the plugin contains other dependencies, that are already included in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js`, the you have to add then to the transator.
+* Make sure that the plugin, that you want to convert, is for the CKEditor 5 version used in your TYPO3 installation. You can find the version by searching for the term `const version =` in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js` in your TYPO3 installation.
+* At the moment the translator only contains dependencies needed to convert the `font` plugin. If the plugin contains other dependencies, that are already included in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js`, you have to add them to the translator file located in the `src` folder.
 
 ### Including the converted plugin to TYPO3
 
