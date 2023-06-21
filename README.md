@@ -34,7 +34,7 @@ If you want to convert another plugin, you have to consider follwing points:
 
 After the build you need to copy the files in the dist folder to a folder in your TYPO3 extension.
 
-If not existing add the file JvaScriptModule.php to your project including the import of the converted plugin.
+If not existing add the file JavaScriptModules.php to your project including the import of the converted plugin.
 
     <?php
 
