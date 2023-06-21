@@ -3,10 +3,10 @@ TYPO3 V12 uses CKEditor 5 for RTE fields in the backend. This converter bundles 
 
 
 ## Background
-TYPO3 provides a way to [add custom plugin into the backend](https://www.derhansen.de/2023/05/2023-05-05-create-a-custom-ckeditor5-plugin-for-typo3-12.html). However this does not work easly with plugins build for ckeditor 5.
+TYPO3 provides a way to [add custom CKEditor plugins into the backend](https://www.derhansen.de/2023/05/2023-05-05-create-a-custom-ckeditor5-plugin-for-typo3-12.html). However this does not work easly with plugins build for ckeditor 5.
 
-This project uses webpack to bundle the existing plugin. By default webpack includes all neede moduls to the bundle, which leads to the [CKEditor Error](https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-ckeditor-duplicated-modules).
- To resolve this error, Webpack needs to be configured to use modules, that are already included in the TYPO3 installation (instead of adding them to the new generated bundle).
+This project uses webpack to bundle the existing plugin. By default webpack includes all needed modules to the bundle, which leads to the [CKEditor Error](https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-ckeditor-duplicated-modules).
+ To resolve this error webpack needs to be configured to use modules, that are already included in the TYPO3 installation (instead of adding them to the new generated bundle).
 
  ## Usage
 
