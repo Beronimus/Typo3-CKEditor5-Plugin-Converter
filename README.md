@@ -28,7 +28,7 @@ If you want to convert another plugin, you have to consider follwing points:
 * You may have to install the plugin you want to convert in this project (probably using npm).
 * Change the entry point of the webpack.config.js to ponit to the entry of the plugin.
 * Make sure that the plugin, that you want to convert, is for the CKEditor 5 version used in your TYPO3 installation. You can find the version by searching for the term `const version =` in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js` in your TYPO3 installation.
-* At the moment the translator only contains dependencies needed to convert the `font` plugin. If the plugin contains other dependencies, that are already included in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js`, you have to add them to the translator file located in the `src` folder.
+* At the moment the translator only contains dependencies needed to convert the `font` plugin. If your plugin contains dependencies, that are included in the file `/vendor/typo3/cms-rte-ckeditor/Resources/Public/Contrib/ckeditor5-bundle.js` but not in one of the translator files, then you have to add them to a translator file located in the `src` folder.
 
 ### Including the converted plugin to TYPO3
 
