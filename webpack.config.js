@@ -19,7 +19,9 @@ module.exports = {
     externals: {
         '@typo3/ckeditor5-bundle.js': '@typo3/ckeditor5-bundle.js'
     },
-    entry: './node_modules/@ckeditor/ckeditor5-code-block/src/codeblock.js',
+    entry: './node_modules/@ckeditor/ckeditor5-font/src/font.js',
+    // Another example: enty to convert the code-block-plugin
+    // entry: './node_modules/@ckeditor/ckeditor5-code-block/src/codeblock.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'cke-font-plugin.js',
