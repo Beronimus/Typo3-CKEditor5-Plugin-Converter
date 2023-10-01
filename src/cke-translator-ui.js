@@ -16,3 +16,4 @@ export const Template = UI.Template
 export const View = UI.View
 export const ViewCollection = UI.ViewCollection 
 export const ColorPickerView = UI.ColorPickerView
+export const SplitButtonView = UI.SplitButtonView

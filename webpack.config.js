@@ -9,6 +9,7 @@ module.exports = {
     },
     resolve: {
         alias: {
+            'ckeditor5/src/enter': '/src/cke-translator-enter.js',
             'ckeditor5/src/engine': '/src/cke-translator-engine.js',
             'ckeditor5/src/core': '/src/cke-translator-core.js',
             'ckeditor5/src/ui': '/src/cke-translator-ui.js',
@@ -18,7 +19,7 @@ module.exports = {
     externals: {
         '@typo3/ckeditor5-bundle.js': '@typo3/ckeditor5-bundle.js'
     },
-    entry: './node_modules/@ckeditor/ckeditor5-font/src/font.js',
+    entry: './node_modules/@ckeditor/ckeditor5-code-block/src/codeblock.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'cke-font-plugin.js',
